@@ -1,15 +1,15 @@
-Ladies Park — Cosmetics Website
-================================
-এটি একটি মোবাইল-ফ্রেন্ডলি ডেমো ওয়েবসাইট।
+Ladies Park Cosmetics Website
 
-ফাইল:
-- index.html — পুরো ওয়েবসাইট
-- ladies-park-logo.png — Ladies Park লোগো
+Files:
+- index.html
+- ladies-park-logo.png
 
-পরবর্তী ধাপে যেগুলো যোগ করা যাবে:
-1. আসল পণ্যের ছবি ও দাম
-2. WhatsApp/Facebook অর্ডার
-3. অর্ডার ডাটাবেস
-4. বিকাশ/নগদ/অনলাইন পেমেন্ট
-5. Admin panel
-6. Domain + hosting
+Current features:
+- Responsive cosmetics storefront
+- Product cards with order buttons
+- Customer order form
+- WhatsApp order sending to 01849371679
+- Cash on Delivery option
+- bKash/Nagad/Card selection placeholder (real gateway requires merchant/gateway setup)
+
+To add products: edit the product cards in index.html. Replace product name, price, emoji/photo and order() values.

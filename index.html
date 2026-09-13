@@ -1,53 +1,31 @@
-  <div class="offer">
-    <h2>🔥 Special Offer</h2>
-    <p>নির্বাচিত পণ্যে বিশেষ ছাড় — আজই অর্ডার করুন!</p>
-    <a class="btn" href="#contact">অর্ডার করতে যোগাযোগ করুন</a>
-  </div>
-</section>
-
-<section class="section" id="contact">
-  <div class="title"><h2>অর্ডার / যোগাযোগ</h2><p>আপনার তথ্য দিলে আমরা অর্ডার কনফার্ম করতে যোগাযোগ করব</p></div>
-  <div class="contact">
-    <div class="box">
-      <h3 style="margin-bottom:15px">Ladies Park</h3>
-      <p>📞 ফোন: <a href="tel:01849371679">01849371679</a></p>
-      <p style="margin-top:10px">📞 ফোন: <a href="tel:01601371679">01601371679</a></p>
-      <p style="margin-top:10px">📦 Cash on Delivery</p>
-      <p style="margin-top:10px">🚚 বাংলাদেশজুড়ে ডেলিভারি</p>
-      <p style="margin-top:10px">📱 WhatsApp: <a href="https://wa.me/8801849371679">01849371679</a></p>
-    </div>
-    <div class="box">
-      <form onsubmit="submitOrder(event)">
-        <input id="name" required placeholder="আপনার নাম">
-        <input id="phone" required placeholder="মোবাইল নম্বর">
-        <input id="address" required placeholder="ডেলিভারি ঠিকানা">
-        <input id="product" placeholder="কোন পণ্য চান?">
-        <textarea id="note" placeholder="অতিরিক্ত তথ্য (ঐচ্ছিক)"></textarea>
-        <button class="btn" type="submit">অর্ডার সাবমিট করুন</button>
-      </form>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <strong>Ladies Park</strong>
-  <div class="small">Ladies Cosmetics • Beauty • Style</div>
-  <div class="small">© 2026 Ladies Park. All rights reserved.</div>
-</footer>
-
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ladies Park | Cosmetics</title>
+<meta name="description" content="Ladies Park - Ladies Cosmetics Online Shop">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:Arial,"Noto Sans Bengali",sans-serif;background:#fff8fb;color:#222}a{text-decoration:none;color:inherit}header{background:#fff;border-bottom:1px solid #eee;position:sticky;top:0;z-index:10}.nav{max-width:1150px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:10px 18px}.logo{height:58px;width:auto;max-width:220px;object-fit:contain}nav{display:flex;gap:22px;font-weight:700}nav a:hover{color:#d41467}.hero{background:linear-gradient(135deg,#fff0f6,#fdf8ff);padding:60px 18px}.hero-inner{max-width:1150px;margin:auto;display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center}.hero h1{font-size:48px;line-height:1.1;margin-bottom:18px}.hero h1 span{color:#d41467}.hero p{font-size:19px;line-height:1.7;color:#555;margin-bottom:25px}.btn{display:inline-block;background:#d41467;color:#fff;padding:13px 24px;border-radius:30px;font-weight:700;border:0;cursor:pointer}.btn:hover{background:#b80f57}.hero-card{background:#fff;border-radius:28px;padding:25px;box-shadow:0 15px 45px rgba(120,30,70,.12);text-align:center}.hero-card .circle{height:280px;width:280px;border-radius:50%;margin:auto;background:radial-gradient(circle at 35% 30%,#fff,#ffd8e7 55%,#f2a2c2);display:flex;align-items:center;justify-content:center;font-size:82px}.section{max-width:1150px;margin:auto;padding:55px 18px}.title{text-align:center;margin-bottom:30px}.title h2{font-size:32px;margin-bottom:8px}.title p{color:#777}.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.cat{background:#fff;padding:25px;border-radius:18px;text-align:center;box-shadow:0 7px 25px rgba(0,0,0,.06);font-size:42px}.cat h3{font-size:18px;margin-top:12px}.products{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.product{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 7px 25px rgba(0,0,0,.06)}.pic{height:210px;background:linear-gradient(135deg,#ffe0eb,#f8efff);display:flex;align-items:center;justify-content:center;font-size:70px}.info{padding:16px}.info h3{font-size:18px;margin-bottom:7px}.price{font-size:20px;font-weight:800;color:#d41467;margin:10px 0}.order{width:100%;text-align:center}.offer{background:#d41467;color:white;border-radius:25px;padding:35px;text-align:center}.offer h2{font-size:30px;margin-bottom:10px}.offer p{margin-bottom:20px}.offer .btn{background:#fff;color:#d41467}.contact{display:grid;grid-template-columns:1fr 1fr;gap:25px}.box{background:#fff;padding:25px;border-radius:18px;box-shadow:0 7px 25px rgba(0,0,0,.06)}form{display:grid;gap:12px}input,textarea,select{width:100%;padding:13px;border:1px solid #ddd;border-radius:10px;font-size:15px}textarea{min-height:100px;resize:vertical}.paybox{background:#fff0f6;padding:15px;border-radius:12px;font-size:14px;line-height:1.6}.paybox strong{color:#d41467}.cartbar{position:fixed;right:16px;bottom:16px;background:#21131b;color:#fff;padding:12px 18px;border-radius:30px;z-index:20;box-shadow:0 8px 25px rgba(0,0,0,.2)}footer{background:#21131b;color:#fff;padding:30px 18px;text-align:center;margin-top:20px}.small{color:#bbb;margin-top:8px;font-size:13px}@media(max-width:800px){nav{display:none}.hero-inner{grid-template-columns:1fr}.hero h1{font-size:38px}.categories,.products{grid-template-columns:repeat(2,1fr)}.contact{grid-template-columns:1fr}}@media(max-width:480px){.categories,.products{grid-template-columns:1fr 1fr}.pic{height:160px}.logo{height:48px;max-width:180px}}
+</style>
+</head>
+<body>
+<header><div class="nav"><a href="#home"><img class="logo" src="ladies-park-logo.png" alt="Ladies Park Logo"></a><nav><a href="#products">Products</a><a href="#categories">Categories</a><a href="#offer">Offers</a><a href="#contact">Order</a></nav></div></header>
+<section class="hero" id="home"><div class="hero-inner"><div><h1>Beauty starts with <span>Ladies Park</span> ✨</h1><p>আপনার পছন্দের Ladies Cosmetics এখন এক জায়গায়। অরিজিনাল ও ট্রেন্ডিং বিউটি প্রোডাক্ট সহজে অর্ডার করুন।</p><a class="btn" href="#products">শপিং শুরু করুন</a></div><div class="hero-card"><div class="circle">💄</div><h2 style="margin-top:18px">Ladies Cosmetics</h2><p style="color:#777;margin-top:6px">Cash on Delivery Available</p></div></div></section>
+<section class="section" id="categories"><div class="title"><h2>ক্যাটাগরি</h2><p>আপনার প্রয়োজনের বিউটি প্রোডাক্ট খুঁজে নিন</p></div><div class="categories"><div class="cat">💄<h3>Makeup</h3></div><div class="cat">💋<h3>Lipstick</h3></div><div class="cat">🧴<h3>Skincare</h3></div><div class="cat">🌸<h3>Body & Perfume</h3></div></div></section>
+<section class="section" id="products"><div class="title"><h2>জনপ্রিয় পণ্য</h2><p>আপনার আসল পণ্য ও ছবি দিয়ে এগুলো বদলাতে পারবেন</p></div><div class="products">
+<div class="product"><div class="pic">💄</div><div class="info"><h3>Premium Lipstick</h3><p>Long lasting finish</p><div class="price">৳ 499</div><button class="btn order" onclick="order('Premium Lipstick',499)">অর্ডার করুন</button></div></div>
+<div class="product"><div class="pic">🧴</div><div class="info"><h3>Glow Face Serum</h3><p>Daily skincare</p><div class="price">৳ 699</div><button class="btn order" onclick="order('Glow Face Serum',699)">অর্ডার করুন</button></div></div>
+<div class="product"><div class="pic">🌸</div><div class="info"><h3>Beauty Perfume</h3><p>Elegant fragrance</p><div class="price">৳ 799</div><button class="btn order" onclick="order('Beauty Perfume',799)">অর্ডার করুন</button></div></div>
+<div class="product"><div class="pic">✨</div><div class="info"><h3>Makeup Kit</h3><p>Complete beauty set</p><div class="price">৳ 999</div><button class="btn order" onclick="order('Makeup Kit',999)">অর্ডার করুন</button></div></div>
+</div></section>
+<section class="section" id="offer"><div class="offer"><h2>🔥 Special Offer</h2><p>নির্বাচিত পণ্যে বিশেষ ছাড় — আজই অর্ডার করুন!</p><a class="btn" href="#contact">অর্ডার করতে যোগাযোগ করুন</a></div></section>
+<section class="section" id="contact"><div class="title"><h2>অর্ডার করুন</h2><p>তথ্য পূরণ করে WhatsApp-এ অর্ডার পাঠান</p></div><div class="contact"><div class="box"><h3 style="margin-bottom:15px">Ladies Park</h3><p>📞 ফোন: <a href="tel:01849371679">01849371679</a></p><p style="margin-top:10px">📞 ফোন: <a href="tel:01601371679">01601371679</a></p><p style="margin-top:10px">🚚 বাংলাদেশজুড়ে ডেলিভারি</p><div class="paybox" style="margin-top:15px"><strong>Payment:</strong><br>📦 Cash on Delivery এখনই ব্যবহার করা যাবে।<br>💳 bKash/Nagad/Card অনলাইন পেমেন্ট চালু করতে আপনার merchant/gateway তথ্য পরে যোগ করতে হবে।</div></div>
+<div class="box"><form onsubmit="submitOrder(event)"><input id="name" required placeholder="আপনার নাম"><input id="phone" required placeholder="মোবাইল নম্বর"><input id="address" required placeholder="ডেলিভারি ঠিকানা"><input id="product" required placeholder="কোন পণ্য চান?"><input id="qty" type="number" min="1" value="1" required placeholder="পরিমাণ"><select id="payment" required><option value="">Payment method নির্বাচন করুন</option><option>Cash on Delivery</option><option>bKash (ম্যানুয়াল/পরে সেটআপ)</option><option>Nagad (ম্যানুয়াল/পরে সেটআপ)</option></select><textarea id="note" placeholder="অতিরিক্ত তথ্য (ঐচ্ছিক)"></textarea><button class="btn" type="submit">WhatsApp-এ অর্ডার পাঠান</button></form></div></div></section>
+<div class="cartbar">🛍️ সহজ অর্ডার • COD</div>
+<footer><strong>Ladies Park</strong><div class="small">Ladies Cosmetics • Beauty • Style</div><div class="small">© 2026 Ladies Park. All rights reserved.</div></footer>
 <script>
-function order(product){
-  document.getElementById('product').value = product;
-  document.getElementById('contact').scrollIntoView({behavior:'smooth'});
-}
-function submitOrder(e){
-  e.preventDefault();
-  const name=document.getElementById('name').value;
-  const phone=document.getElementById('phone').value;
-  const address=document.getElementById('address').value;
-  const product=document.getElementById('product').value || 'পণ্য উল্লেখ করা হয়নি';
-  alert('ধন্যবাদ '+name+'!\\n'+product+' এর জন্য আপনার অর্ডার রিকোয়েস্ট নেওয়া হয়েছে।\\nফোন: '+phone);
-}
+function order(product,price){document.getElementById('product').value=product;document.getElementById('note').value='পণ্যের দাম: ৳ '+price;document.getElementById('contact').scrollIntoView({behavior:'smooth'});}
+function submitOrder(e){e.preventDefault();const name=document.getElementById('name').value.trim();const phone=document.getElementById('phone').value.trim();const address=document.getElementById('address').value.trim();const product=document.getElementById('product').value.trim();const qty=document.getElementById('qty').value;const payment=document.getElementById('payment').value;const note=document.getElementById('note').value.trim();const text=`Ladies Park Order%0A%0Aনাম: ${encodeURIComponent(name)}%0Aফোন: ${encodeURIComponent(phone)}%0Aঠিকানা: ${encodeURIComponent(address)}%0Aপণ্য: ${encodeURIComponent(product)}%0Aপরিমাণ: ${encodeURIComponent(qty)}%0APayment: ${encodeURIComponent(payment)}%0Aনোট: ${encodeURIComponent(note||'নেই')}`;window.open('https://wa.me/8801849371679?text='+text,'_blank');}
 </script>
-</body>
-</html>
+</body></html>
